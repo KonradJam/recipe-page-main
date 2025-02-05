@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+.recipe-top-img {
+    width: 100%;
+    max-height: 170px;
+    object-fit: cover;
+}
+
+.recipe-container {
+    padding: 2.5rem 2rem;
+}
+
+.recipe-header-title {
+    font-family: 'Young Serif', serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin-bottom: 1.25rem;
+    color: var(--stone-900);
+}
+
+.recipe-header-desc {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: var(--stone-600);
+}
+
+.recipe-time-section {
+    font-family: 'Outfit', sans-serif;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--rose-50);
+    border-radius: 12px;
+}
+
+.recipe-time-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--rose-800);
+}
+
+.recipe-time-section-list {
+    padding-left: inherit;
+    color: var(--stone-600);
+}
+
+.recipe-time-section-list > li {
+    padding-left: 1rem;
+}
+
+.recipe-time-section-list > li:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.recipe-time-section-list > li::marker {
+    font-size: .75rem;
+    color: var(--rose-800);
+    vertical-align: middle;
+}
+
+.recipe-section {
+    margin: 2rem 0;
+}
+
