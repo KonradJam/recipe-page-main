@@ -14,7 +14,16 @@
     --rose-50: hsl(330, 100%, 98%);
 }
 
+body {
+    background: var(--stone-100);
+    padding: clamp(0rem, calc(-5.417rem + 18.056vw), 3.25rem); /* min: 0px, max: 52px */
+}
+
 .recipe {
+    width: 100%;
+    max-width: 736px;
+    background: white;
+    margin: 0 auto;
     color: var(--stone-600);
 }
 
@@ -25,7 +34,7 @@
 }
 
 .recipe-container {
-    padding: 2.5rem 2rem;
+    padding: 0 2rem 2.5rem 2rem;
 }
 
 .recipe-header-title {
@@ -33,6 +42,7 @@
     font-size: 2.25rem;
     font-weight: 400;
     line-height: 2.2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1.25rem;
     color: var(--stone-900);
 }
@@ -153,3 +163,27 @@ ol.recipe-section-list > li::before {
     font-weight: 600;
 }
 
+@media (min-width: 481px) {
+    .recipe {
+        border-radius: 24px;
+        padding: 2.5rem;
+    }
+
+    .recipe-container {
+        padding: 0;
+    }
+
+    .recipe-top-img {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        padding: clamp(2.5rem, calc(-0.25rem + 9.167vw), 8rem) 2.5rem; /* min: 40px, max: 128px */
+    }
+
+    .recipe {
+        margin: 0 auto;
+    }
+}
