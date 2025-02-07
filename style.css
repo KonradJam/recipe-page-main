@@ -182,8 +182,4 @@ ol.recipe-section-list > li::before {
     body {
         padding: clamp(2.5rem, calc(-0.25rem + 9.167vw), 8rem) 2.5rem; /* min: 40px, max: 128px */
     }
-
-    .recipe {
-        margin: 0 auto;
-    }
 }
